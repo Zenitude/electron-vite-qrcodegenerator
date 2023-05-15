@@ -6,7 +6,6 @@ import { switchDisplay } from '@renderer/utils/functions/switchDisplay';
 import { FaChevronCircleUp } from 'react-icons/fa';
 
 export default function Form({code, set}: PropsForm): JSX.Element {
-  const [ barcode, setBarCode ] = useState(code.barcode);
   const [ qrcode, setQrCode ] = useState(code.qrcode);
   const [ imageSettings, setImageSettings ] = useState(code.qrcode.imageSettings);
   const [ toggleInput, setToggleInput ] = useState([
@@ -32,8 +31,8 @@ Cependant, une correction d'erreur plus élevée signifie également que le code
   }, [imageSettings])
 
   useEffect(() => {
-    set({...code, qrcode: qrcode, barcode: barcode});
-  }, [barcode, qrcode]);
+    set({...code, qrcode: qrcode});
+  }, [qrcode]);
 
   return (
     <FormContainer>
@@ -46,7 +45,6 @@ Cependant, une correction d'erreur plus élevée signifie également que le code
               value={code.qrcode.value}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                 setQrCode({...qrcode, value: e.target.value, imageSettings: imageSettings});
-                setBarCode({...barcode, value: e.target.value});
                 formatLink(e, imageSettings, setImageSettings);
               }} 
             />)
