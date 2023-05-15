@@ -2,6 +2,12 @@
 
 An Electron application with React and TypeScript
 
+## About
+
+* When a social network url is entered, the central image is replaced by the network icon.
+
+* The QrCode can then be downloaded as a png file
+
 ## Recommended IDE Setup
 
 - [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
