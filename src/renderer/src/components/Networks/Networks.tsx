@@ -1,7 +1,7 @@
 import { NetworksContainer, NetworkLink, NetworkImage } from "./Networks.style";
-import { networks } from '../../utils/datas/networks';
+import { NetworksProps } from "@renderer/utils/types/types";
 
-export default function Networks() {
+export default function Networks({networks}: NetworksProps) {
   return (
     <NetworksContainer>
       {

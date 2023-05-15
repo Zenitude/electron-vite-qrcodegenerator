@@ -18,15 +18,15 @@ An Electron application with React and TypeScript
 
 * When the application is launched
 
-![start](./src/renderer/src/assets/start-app.png)
+![start](./src/renderer/src/assets/start-app.webp)
 
 * After entering a social network address
 
-![after](./src/renderer/src/assets/after-app.png)
+![after](./src/renderer/src/assets/after-app.webp)
 
-* Downloadable image
+* Downloadable Png image
 
-![download](./src/renderer/src/assets/qrcode.png)
+![download](./src/renderer/src/assets/qrcode.webp)
 
 ## Recommended IDE Setup
 

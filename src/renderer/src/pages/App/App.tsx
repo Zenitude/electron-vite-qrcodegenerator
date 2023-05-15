@@ -3,6 +3,8 @@ import { AppContainer } from "./App.style";
 import { QRCode, Form, Networks } from "./Components";
 import { CodeType } from '@renderer/utils/types/types';
 import icone from '../../assets/Zen.png';
+import { networks } from '../../utils/datas/networks';
+import { supports } from '../../utils/datas/supports';
 
 export default function App(): JSX.Element {
   const [ code, setCode ] = useState<CodeType>({
@@ -21,24 +23,6 @@ export default function App(): JSX.Element {
         width: 50,
         excavate: true
       }
-    },
-    barcode: {
-      value: "http://www.example.com/",
-      width: 2,
-      height: 100,
-      format: "CODE128",
-      fontOptions: "",
-      font: "monospace",
-      fontSize: 20,
-      textAlign: "center",
-      textPosition: "bottom",
-      textMargin: 2,
-      displayValue: true,
-      margin: 10,
-      marginTop: undefined,
-      marginRight: undefined,
-      marginBottom: undefined,
-      marginLeft: undefined
     }
   })
 
@@ -48,7 +32,8 @@ export default function App(): JSX.Element {
         <QRCode code={code}/>
       </div>
       <Form code={code} set={setCode}/>
-      <Networks />
+      <Networks networks={networks}/>
+      <Networks networks={supports}/>
     </AppContainer>
   )
 }

@@ -6,11 +6,15 @@ export const NetworksContainer = styled.div`
     height: 80px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 `;
 
 export const NetworkLink = styled(Link)`
     width: 60px;
     height: 60px;
+    border-radius: 15px;
+    overflow: hidden;
+    filter: drop-shadow(0 0 1px #fff);
 `;
 
 export const NetworkImage = styled.img`
