@@ -22,7 +22,7 @@ export default function QRCode({code}: PropsCode): JSX.Element {
           imageSettings={code.qrcode.imageSettings}
         />
       </div>
-      <button onClick={(e):void => downloadImage(e, qrCodeRef, 'qr')}><FaFileDownload /></button>
+      <button onClick={(e):void => downloadImage(e, qrCodeRef)}><FaFileDownload /></button>
     </ContainerQrCode>
   )
 }
