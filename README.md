@@ -5,6 +5,9 @@ An Electron application with React and TypeScript
 ## About
 
 * When a social network url is entered, the central image is replaced by the network icon.
+    * options : 
+        * Networks : Github, Linkedin, Facebook, Instagram, Pinterest, Youtube, Twitter, Twitch, Tiktok, Reddit
+        * Supports : KissKissBankBank, Liberapay, Patreon, Tipee, Utip
 
 * The QrCode can then be downloaded as a png file
 
